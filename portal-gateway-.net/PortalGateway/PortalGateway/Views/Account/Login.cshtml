@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Log In";
+}
+
+@model LoginViewModel
+
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <h2>@ViewBag.Title</h2>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row">
+                    <section id="loginForm">
+                        @using (Html.BeginForm("Login", "Account", new { returnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                        {
+                            @Html.AntiForgeryToken() 
+                            <br />
+                            <div class="row">
+                                <div class="col-md-offset-3 col-md-9 text-muted medium-font">
+                                    <strong>Enter your network user ID and password</strong>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-offset-3 col-md-9">
+                                    @Html.ValidationMessage("ErrorMessage", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.UserId, new { @class = "col-md-3 control-label medium-font" })
+                                <div class="col-md-9">
+                                    @Html.TextBoxFor(m => m.UserId, new { @class = "form-control medium-font", size = "32", maxlength = "255", placeholder = "Enter your user name" })
+                                    @Html.ValidationMessage("UserName", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Password, new { @class = "col-md-3 control-label medium-font" })
+                                <div class="col-md-9">
+                                    @Html.PasswordFor(m => m.Password, new { @class = "form-control medium-font", size = "32", maxlength = "255", placeholder = "Enter your password" })
+                                    @Html.ValidationMessage("Password", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-offset-3 col-md-9">
+                                    <input type="submit" name="LoginButton" value="Log In" class="btn btn-primary" />&nbsp;
+                                </div>
+                            </div>
+                        }
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2"></div>
+</div>

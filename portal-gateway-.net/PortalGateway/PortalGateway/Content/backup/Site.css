@@ -1,0 +1,74 @@
+﻿body {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    background: url('../Images/ccoc.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+p {
+    padding-right: 20px;
+}
+
+input, select, textarea {
+    max-width: 280px;
+}
+
+    input.input-validation-error {
+        border: 1px solid #b94a48;
+    }
+
+    input[type="checkbox"].input-validation-error {
+        border: 0 none;
+    }
+
+small {
+    font-size: 70%;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    margin-top: 1px;
+}
+
+
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.label-standard {
+    font-size: 1em;
+}
+
+.label-large {
+    font-size: 1.2em;
+}
+
+#to-page-top {
+    padding: 5px 3px;
+    background: #000;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+    display: none;
+    cursor: pointer;
+}

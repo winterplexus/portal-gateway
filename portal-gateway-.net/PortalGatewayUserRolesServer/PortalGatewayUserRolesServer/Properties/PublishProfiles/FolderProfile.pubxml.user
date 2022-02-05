@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\inetpub\wwwroot\FPLS\PortalGatewayUserRolesServer</_PublishTargetUrl>
+    <History>True|2022-01-27T00:02:28.6021670Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/PortalGatewayUserRolesServer.dll">
+      <publishTime>01/26/2022 19:02:27</publishTime>
+    </File>
+    <File Include="bin/PortalGatewayUserRolesServer.pdb">
+      <publishTime>01/26/2022 19:02:27</publishTime>
+    </File>
+    <File Include="bin/PortalGatewayUserRolesServer.Utility.dll">
+      <publishTime>01/26/2022 19:02:27</publishTime>
+    </File>
+    <File Include="bin/PortalGatewayUserRolesServer.Utility.pdb">
+      <publishTime>01/26/2022 19:02:27</publishTime>
+    </File>
+    <File Include="UserRolesService.svc">
+      <publishTime>01/25/2022 12:55:00</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/26/2022 19:02:28</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
