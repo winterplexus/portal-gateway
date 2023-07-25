@@ -11,14 +11,14 @@ Portal gateway is based on .NET Framework platform (4.8) using the following com
 
 * Portal Gateway User Roles Server
 
-#### Portal Gateway
+## Portal Gateway
                 
 - Authenticates users using credentials against one or more Active Directory (AD) domains.
 - Authorizes users using comma-delimited list of roles returned from user roles server.
 - Writes activities to log file.
 - Writes exceptions to Windows Event Log file.
 
-#### Portal Gateway Module
+## Portal Gateway Module
                 
 - Creates a TLS connection to the private site using a certifcate installed on portal gateway server.
 - Forwards HTTP requests and responses to private site.
@@ -35,11 +35,12 @@ Portal gateway is based on .NET Framework platform (4.8) using the following com
 - Writes network data (HTTP) to log file (for diagnostics purposes only).
 - Writes exceptions to Windows Event Log file.
 
-#### Portal Gateway User Roles Server
+## Portal Gateway User Roles Server
+
 - Returns comma-delimited list of roles based on given Active Directory username.
 - Writes exceptions to Windows Event Log file.             
 
-#### Project Components
+### Project Components
 
 | Name                         | Technology                                                     |
 | ---                          | ---                                                            |

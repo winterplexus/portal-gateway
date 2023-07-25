@@ -1,7 +1,7 @@
 //
 //  AboutViewModel.cs
 //
-//  Wiregrass Code Technology 2020-2022 
+//  Wiregrass Code Technology 2020-2023 
 //
 using System.ComponentModel.DataAnnotations;
 
